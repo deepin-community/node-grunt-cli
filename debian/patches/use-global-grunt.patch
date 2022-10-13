@@ -1,0 +1,21 @@
+Description: Use global grunt
+Author: Praveen Arimbrathodiyil <praveen@debian.org>
+Bug: https://github.com/gruntjs/grunt-cli/pull/55
+Forwarded: https://github.com/gruntjs/grunt-cli/pull/55
+Reviewed-By: Xavier Guimard <yadd@debian.org>
+Last-Update: 2019-12-18
+
+--- a/bin/grunt
++++ b/bin/grunt
+@@ -51,6 +51,11 @@
+   }, function (env) {
+     var tasks = options.argv.remain;
+     delete options.argv;
++    // look for global grunt install
++    if (!env.modulePath)
++      try {
++        env.modulePath = require.resolve('grunt');
++      } catch (ex) { }
+     // No grunt install found!
+     if (!env.modulePath) {
+       if (options.version) {

@@ -1,0 +1,16 @@
+Description: add main entry
+ Needed for tests
+Author: Xavier Guimard <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/900195
+Forwarded: not-needed
+Last-Update: 2019-12-18
+
+--- a/package.json
++++ b/package.json
+@@ -30,5 +30,6 @@
+     "completion",
+     "lib"
+   ],
++  "main": "lib/info",
+   "appveyor_id": "prp6g944b05jsq6d"
+ }

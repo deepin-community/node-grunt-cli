@@ -1,0 +1,95 @@
+node-grunt-cli (1.3.2-4) unstable; urgency=medium
+
+  * Team upload
+  * Add mising dependency to node-interpret
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 21 Feb 2020 13:55:15 +0100
+
+node-grunt-cli (1.3.2-3) unstable; urgency=medium
+
+  * Team upload
+  * Fix use-global-grunt.patch
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 21 Feb 2020 13:22:19 +0100
+
+node-grunt-cli (1.3.2-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 21 Feb 2020 11:30:33 +0100
+
+node-grunt-cli (1.3.2-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.4.1, no changes needed.
+
+  [ Xavier Guimard ]
+  * Add "Rules-Requires-Root: no"
+  * New upstream version 1.3.2
+  * Refresh patches
+  * Switch link to pkg-js-tools auto install
+  * Install bash completion file
+  * Update dependencies: remove node-findup-sync and add node-v8flags
+  * Fix files field
+  * Clean completion file
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 18 Dec 2019 22:52:42 +0100
+
+node-grunt-cli (1.2.0-5) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Add debian/gbp.conf
+  * Switch install to pkg-js-tools
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 03 Aug 2019 15:43:07 +0200
+
+node-grunt-cli (1.2.0-4) unstable; urgency=medium
+
+  * Team upload
+
+  [ Andreas Moog ]
+  * Add basic autopkgtest (Closes: #900195)
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 11
+  * Declare compliance with policy 4.3.0
+  * Change section to javascript
+  * Fix VCS fields
+  * Remove use-nodejs.patch
+  * Refresh patches
+  * Fix d/copyright format
+  * Add upstream/metadata
+  * Add main entry in package.json (Closes: #900195)
+  * Remove lintian overrides
+  * Switch minimal test to pkg-js-tools
+  * Add grunt in recommended dependencies (Closes: #892018)
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 20 Feb 2019 07:35:45 +0100
+
+node-grunt-cli (1.2.0-3) unstable; urgency=medium
+
+  * Allow using global grunt
+  * Add myself to uploaders
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 12 Nov 2016 15:29:10 +0530
+
+node-grunt-cli (1.2.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix nodejs path in grunt command
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 11 Nov 2016 21:36:50 +0530
+
+node-grunt-cli (1.2.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #838435)
+
+ -- Tim Potter <tpot@hpe.com>  Tue, 20 Sep 2016 16:18:09 +1000
