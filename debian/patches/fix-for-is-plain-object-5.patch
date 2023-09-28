@@ -1,0 +1,16 @@
+Description: fix for is-plain-object ≥ 5
+Author: Yadd <yadd@debian.org>
+Forwarded: no
+Last-Update: 2022-01-09
+
+--- a/liftup/index.js
++++ b/liftup/index.js
+@@ -5,7 +5,7 @@
+ var extend = require('extend');
+ var resolve = require('resolve');
+ var flaggedRespawn = require('flagged-respawn');
+-var isPlainObject = require('is-plain-object');
++var { isPlainObject } = require('is-plain-object');
+ var mapValues = require('object.map');
+ var fined = require('fined');
+ 

@@ -5,7 +5,13 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ --with nodejs
+	dh $@
 
 override_dh_auto_build:
 	cp completion/bash completion/grunt
+	help2man -N --name 'JavaScript Task Runner' ./bin/grunt >grunt.1
+	perl -i -pe 's/grunt-cli/grunt/g;s/GRUNT-CLI/GRUNT/g;' grunt.1
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod -x debian/node-grunt-cli/usr/share/bash-completion/completions/grunt

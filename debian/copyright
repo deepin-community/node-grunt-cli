@@ -2,14 +2,16 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: grunt-cli
 Upstream-Contact: https://github.com/gruntjs/grunt-cli/issues
 Source: https://github.com/gruntjs/grunt-cli
+ https://registry.npmjs.org/liftup
 
 Files: *
-Copyright: 2016 Tyler Kellen
+Copyright: 2014-2016 Tyler Kellen
            2016 Grunt Development Team (https://gruntjs.com/development-team)
 License: Expat
 
 Files: debian/*
 Copyright: 2016 Tim Potter <tpot@hpe.com>
+ 2021-2022 Yadd <yadd@debian.org>
 License: Expat
 
 License: Expat
